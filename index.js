@@ -9,7 +9,6 @@ function searchRepositories(){
 }
 
 function renderResults(data){
-  // debugger
   return data.items.map(rep => '<li>' + rep.name + ` <a href="#" data-owner="${rep.owner.login}" data-repo="${rep.name}" onclick='showCommits(this)'>Show Commits</a>` + '</li>')
 }
 
